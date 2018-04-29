@@ -58,8 +58,8 @@ The solution is a simple Minimum Viable Product to meet the basic requirements o
 
 Future hardening efforts would look to:
 
-3.1) Use a Production grade Web Server Gateway Interface (WSGI) server to implement the API.
-3.2) User authentication
+3.1) Use a Production grade Web Server Gateway Interface (WSGI) server to implement the API.\n
+3.2) User authentication.\n
 3.3) Use a Javascript based form to allow form based requests and file uploads.
 3.4) Persistent storage to allow users to query all their previously added keys and make it easier to delete these keys.
 3.5) A message queue to ensure requests can be re-processed on failure.
