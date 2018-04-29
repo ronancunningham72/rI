@@ -29,8 +29,7 @@ This will create an api running on port 5000 on the host machine.
 ## 2) Assumptions
 - The API will run on an instance that users can access within their home network without being blocked by a firewall.
 - The target instances already exist and all remote administration access must happen over ssh (no Kerberos,LDAP etc).
-- All users log on as the same default system user account account on the target instances e.g a user named default-user.
-- The API will execute as a user with ssh access to the 'default-user' account on remote machines. Ansible only needs to be   installed on the host where the API executes.
+- The API will execute as a user with ssh access to the default-user account on remote machines. Ansible only needs to be   installed on the host where the API executes.
 - Users have software available (Curl, Postman etc) to make HTTP PUT requests.
 
 ## 2) Usage
