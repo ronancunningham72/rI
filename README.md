@@ -50,7 +50,8 @@ The Python Flask module implements a basic class that calls an Ansible command l
 'lineinfile' module'.
 This Ansible module ensures a particular line (public ssh key) is present or absent in a file (/home/ec2-user/.ssh/authorized_keys).
 
-## e.g ansible all -i 54.236.243.206,54.236.243.207 -m lineinfile -a path=/home/ec2-user/.ssh/authorised_keys state=present line='My Public key' -u ec2-user
+Example:
+ansible all -i 54.236.243.206,54.236.243.207 -m lineinfile -a path=/home/ec2-user/.ssh/authorised_keys state=present line='My Public key' -u ec2-user
 
 http://docs.ansible.com/ansible/latest/modules/lineinfile_module.html
 
