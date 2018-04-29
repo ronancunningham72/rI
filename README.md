@@ -66,9 +66,9 @@ Future hardening efforts would look to:
 
 3.2) User authentication.
 
-3.3) Use a Javascript based form to allow form based requests and file uploads.
+3.3) Implement Javascript form based requests and file uploads.
 
-3.4) Persistent storage to allow users to query all their previously added keys and make it easier to delete these keys.
+3.4) Persistent data storage to allow users to query all their previously added keys and make it easier to delete these keys.
 
 3.5) A message queue to ensure requests can be re-processed on failure.
 
