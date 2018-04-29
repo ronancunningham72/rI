@@ -13,15 +13,15 @@ Flask is a micro web framework written in Python
 Software that automates software provisioning, configuration management, and application deployment.
 
 ## 1) Installation
-   # 1.1) Install PIP 
+   ### 1.1) Install PIP 
    
    yum install -y pip
    
-   # 1.2) Install Flask
+   ### 1.2) Install Flask
    
    pip install flask
    
-   # 1.3) Install Flask
+   ### 1.3) Install Flask
    
    pip install ansible
 
