@@ -47,7 +47,7 @@ The value of 'key' should be the contents of the public ssh key to add to the '~
 ## 3) BackEnd processing
 
 The Python Flask module implements a basic class that calls an Ansible command line process to call the 
-'lineinfile' module'
+'lineinfile' module'.
 This Ansible module ensures a particular line (public ssh key) is present or absent in a file (~/.ssh/authorized_keys).
 
 http://docs.ansible.com/ansible/latest/modules/lineinfile_module.html
