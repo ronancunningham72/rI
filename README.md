@@ -42,7 +42,7 @@ curl http://targethost:5000/add -d "host=54.236.243.206" -d "key=${key}" -X PUT
 
 curl http://targethost:5000/delete -d "host=54.236.243.206" -d "host=34.234.100.40" -d "key=${key}" -X PUT
 
-The value of 'key' should be the contents of the public sss key to add to the '~/.ssh/authorized_keys'.
+The value of 'key' should be the contents of the public ssh key to add to the '~/.ssh/authorized_keys'.
 
 ## 3) BackEnd processing
 
