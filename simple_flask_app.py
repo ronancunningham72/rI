@@ -43,26 +43,23 @@ def run_ansible(state, key, hosts):
     return msg
 
 
-class AddKeys(Resource):
+class Keys(Resource):
     def put(self):
-        args    = parser.parse_args()
-        key     = args['key']
-        hosts   = args['host']
-        state   = 'present'
-        add_key = run_ansible(state, key, hosts)
-        return add_key
-        
-class RemoveKeys(Resource):
-    def put(self):
+    
         args       = parser.parse_args()
         key        = args['key']
         hosts      = args['host']
-        state      = 'absent'
-        remove_key = run_ansible(state, key, hosts)
-        return remove_key
         
-api.add_resource(AddKeys, '/add')
-api.add_resource(RemoveKeys, '/delete')
+        if request.path == '/add':
+            state      = 'present'
+        else:
+            state      = 'absent'
+            
+        key = run_ansible(state, key, hosts)
+        
+        return key
+        
+api.add_resource(Keys, '/add', '/delete')
 
 if __name__ == '__main__':
-    app.run(debug=True) 
+    app.run(host="0.0.0.0") 
