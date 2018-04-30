@@ -41,36 +41,14 @@ This will create an api running on port 5000 on the host machine.
 curl http://targethost:5000/add -d "host=54.236.243.206" -d "key=${key}" -X PUT
 
 Response:
-User should see: "Key added to hosts - Success"
-
-Back-End logs:
-
-_10.1.0.239 | SUCCESS => {_
-
-    "backup": "",
-    
-    "changed": true,
-    
-    "msg": "line added"
-    
-}
-
-10.1.0.189 | SUCCESS => {
-
-    "backup": "",
-    
-    "changed": true,
-    
-    "msg": "line added"
-    
-}
-
-86.142.214.54 - - [30/Apr/2018 17:56:35] "PUT /add HTTP/1.1" 200 -
-
+User should see: *Key added to hosts - Success*
 
 2.2) Deleting a Key from multiple hosts.
 
 curl http://targethost:5000/delete -d "host=54.236.243.206" -d "host=34.234.100.40" -d "key=${key}" -X PUT
+
+Response:
+User should see: *Key removed from hosts - Success*
 
 The value of 'key' should be the contents of the public ssh key to add to the '~/.ssh/authorized_keys'.
 
