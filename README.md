@@ -76,6 +76,8 @@ Future hardening efforts would look to:
 
 3.6) Email confirmation.
 
+3.7) Implement TLS/SSL
+
 
 
 
