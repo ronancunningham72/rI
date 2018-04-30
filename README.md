@@ -16,6 +16,8 @@ I've used the following tools in a Python based simple REST API with some common
    
    pip install flask
    
+   pip install flask_restful
+   
 1.3) Install Ansile
    
    pip install ansible
