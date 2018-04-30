@@ -45,16 +45,26 @@ User should see: "Key added to hosts - Success"
 
 Back-End logs:
 
-10.1.0.239 | SUCCESS => {
+_10.1.0.239 | SUCCESS => {_
+
     "backup": "",
+    
     "changed": true,
+    
     "msg": "line added"
+    
 }
+
 10.1.0.189 | SUCCESS => {
+
     "backup": "",
+    
     "changed": true,
+    
     "msg": "line added"
+    
 }
+
 86.142.214.54 - - [30/Apr/2018 17:56:35] "PUT /add HTTP/1.1" 200 -
 
 
